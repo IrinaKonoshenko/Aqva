@@ -43,9 +43,20 @@ body {
   box-sizing: border-box;
 }
 
-
 body {
   font-family: var(--base-font);
   color: var(--base-color);
   background-color: var(--all-background-color);
 }
+
+:root {
+  --black-color: #000;
+  --base-color: #fff;
+  --all-background-color: #162831;
+  --base-font: "Ibarra Real Nova", sans-serif;
+  --secondary-font: "El Messiri", sans-serif;
+}
+
+.logo__icon {
+  fill: var(--base-color);
+}/*# sourceMappingURL=main.css.map */
