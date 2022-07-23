@@ -1,0 +1,12 @@
+.session{
+    margin-top: 150px;
+   &__list{
+    display: flex;
+    flex-wrap: wrap;
+   }
+   &__link{
+    background-image: url(../../image/session1.jpg);
+    background-position: center;
+    background-size: cover;
+   }
+}

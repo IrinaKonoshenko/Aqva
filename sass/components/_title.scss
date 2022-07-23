@@ -1,0 +1,31 @@
+.title {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.4;
+  text-align: center;
+  margin-bottom: 100px;
+  &__line {
+    position: relative;
+    &:after,
+    &:before {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      content: "";
+      width: 28px;
+      height: 14px;
+      background-color: var(--accent-color);
+    }
+    &:after {
+      left: -66px;
+      border-top-right-radius: 50px;
+      border-bottom-left-radius: 50px;
+    }
+    &:before {
+      right: -66px;
+      border-top-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+    }
+  }
+}
