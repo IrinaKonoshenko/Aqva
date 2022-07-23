@@ -1,0 +1,48 @@
+.hero {
+  padding-top: 20px;
+  &__container {
+    background-image: url(../../image/hero.jpg);
+    padding-top: 136px;
+    padding-bottom: 210px;
+    text-align: center;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+  }
+  &__text {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.41;
+    margin-bottom: 40px;
+  }
+  &__line {
+    position: relative;
+    &:after,
+    &:before {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      content: "";
+      width: 28px;
+      height: 14px;
+      background-color: #fff;
+    }
+    &:after {
+      left: -66px;
+      border-top-right-radius: 50px;
+      border-bottom-left-radius: 50px;
+    }
+    &:before {
+      right: -66px;
+      border-top-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+    }
+  }
+  &__title {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.4;
+  }
+}

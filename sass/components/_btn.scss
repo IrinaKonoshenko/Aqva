@@ -1,0 +1,30 @@
+.btn{
+    border: none;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1.38;
+    padding: 9px 15px;
+    transition: all ease-in-out 300ms;
+    cursor: pointer;
+    position: relative;
+    &:active{
+        top: 1px;
+    }
+    &--blue{
+        background-color: var(--accent-color);
+        color: var(--base-color);
+        &:hover,
+        &:focus{
+            background-color: #066386;
+        }
+    }
+    &--white{
+        background-color: var(--base-color);
+        color: var(--accent-color);
+        &:hover,
+        &:focus{
+           color: #066386;
+        }
+    }
+}

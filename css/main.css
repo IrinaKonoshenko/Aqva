@@ -49,14 +49,112 @@ body {
   background-color: var(--all-background-color);
 }
 
+.container {
+  width: 1300px;
+  margin: 0 auto;
+}
+
 :root {
   --black-color: #000;
   --base-color: #fff;
+  --accent-color: #018ABE;
   --all-background-color: #162831;
   --base-font: "Ibarra Real Nova", sans-serif;
   --secondary-font: "El Messiri", sans-serif;
 }
 
-.logo__icon {
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+.header__list {
+  display: flex;
+  gap: 50px;
+}
+.header__link {
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.hero {
+  padding-top: 20px;
+}
+.hero__container {
+  background-image: url(../../image/hero.jpg);
+  padding-top: 136px;
+  padding-bottom: 210px;
+  text-align: center;
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+}
+.hero__text {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.41;
+  margin-bottom: 40px;
+}
+.hero__line {
+  position: relative;
+}
+.hero__line:after, .hero__line:before {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "";
+  width: 28px;
+  height: 14px;
+  background-color: #fff;
+}
+.hero__line:after {
+  left: -66px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.hero__line:before {
+  right: -66px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.hero__title {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.4;
+}
+
+.logo__link__icon {
   fill: var(--base-color);
+}
+
+.btn {
+  border: none;
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.38;
+  padding: 9px 15px;
+  transition: all ease-in-out 300ms;
+  cursor: pointer;
+  position: relative;
+}
+.btn:active {
+  top: 1px;
+}
+.btn--blue {
+  background-color: var(--accent-color);
+  color: var(--base-color);
+}
+.btn--blue:hover, .btn--blue:focus {
+  background-color: #066386;
+}
+.btn--white {
+  background-color: var(--base-color);
+  color: var(--accent-color);
+}
+.btn--white:hover, .btn--white:focus {
+  color: #066386;
 }/*# sourceMappingURL=main.css.map */

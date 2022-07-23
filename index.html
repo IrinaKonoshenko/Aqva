@@ -23,48 +23,55 @@
   <body>
     <header class="header">
       <div class="header__container container">
-        <div>
-          <a href="#" class="logo link">
+        <div class="header__logo logo">
+          <a href="#" class="logo__link link">
             <svg width="60" height="60" class="logo__icon">
               <use href="./image/symbol-defs.svg#icon-logo"></use>
             </svg>
           </a>
         </div>
-        <nav>
-          <ul>
-            <li>
-              <a class="link" href="#">Главная</a>
+        <nav class="header__navigation">
+          <ul class="header__list list">
+            <li class="header__element">
+              <a class="header__link link" href="#">Главная</a>
             </li>
-            <li>
-              <a class="link" href="">Сеансы</a>
+            <li class="header__element">
+              <a class="header__link link" href="">Сеансы</a>
             </li>
-            <li>
-              <a class="link" href="">Отзывы</a>
+            <li class="header__element">
+              <a class="header__link link" href="">Отзывы</a>
             </li>
-            <li>
-              <a class="link" href="">Контакты</a>
+            <li class="header__element">
+              <a class="header__link link" href="">Контакты</a>
             </li>
-            <li>
-              <a class="link" href="./news.html">Новости</a>
+            <li class="header__element">
+              <a class="header__link link" href="./news.html">Новости</a>
             </li>
-            <li>
-              <a class="link" href="">Обо мне</a>
+            <li class="header__element">
+              <a class="header__link link" href="">Обо мне</a>
             </li>
-            <li>
-              <a class="link" href="./blog.html">Блог</a>
+            <li class="header__element">
+              <a class="header__link link" href="./blog.html">Блог</a>
             </li>
-            <div>
-              <button type="button">Записаться на сеанс</button>
-            </div>
           </ul>
         </nav>
+        <div class="header__button">
+          <button type="button" class="btn btn--blue">
+            <div class="btn__text">Записаться на сеанс</div>
+          </button>
+        </div>
       </div>
     </header>
     <main>
       <section class="hero">
-        <div>
-          <p>Укрепление здоровья</p>
-          <h1>Акватерапия RitmStyle</h1>
+        <div class="hero__container container">
+          <p class="hero__text">
+            <span class="hero__line">Укрепление здоровья</span>
+          </p>
+          <h1 class="hero__title">
+            Акватерапия <br />
+            RitmStyle
+          </h1>
         </div>
       </section>
       <section class="session">
@@ -124,7 +131,7 @@
           <h2>Об RitmStyle</h2>
           <div>
             <p>RitmStyle массаж</p>
-            <p>
+            <!-- <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in
               purus, sed tellus eget mattis nibh quam. Eu ornare nunc, id est.
               Erat consectetur etiam a sit diam in imperdiet amet. Diam nisl,
@@ -133,12 +140,12 @@
               posuere maecenas dictumst quam. Felis amet diam, non augue massa.
               Egestas molestie lobortis rhoncus, elit nulla nisl. Habitant
               tortor at tempor.
-            </p>
+            </p> -->
             <img src="" alt="" />
           </div>
           <div>
             <p>RitmStyle гидротерапия</p>
-            <p>
+            <!-- <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in
               purus, sed tellus eget mattis nibh quam. Eu ornare nunc, id est.
               Erat consectetur etiam a sit diam in imperdiet amet. Diam nisl,
@@ -147,7 +154,7 @@
               posuere maecenas dictumst quam. Felis amet diam, non augue massa.
               Egestas molestie lobortis rhoncus, elit nulla nisl. Habitant
               tortor at tempor.
-            </p>
+            </p> -->
             <img src="" alt="" />
           </div>
         </div>
@@ -158,15 +165,15 @@
         </div>
         <div>
           <ul>
-            <li>RitmStyle с погружением <span>1000р.</span> </li>
-            <li>Абонемент на RitmStyle <span>5500р.</span> </li>
-            <li>RitmStyle для пар <span>6000р.</span> </li>
-            <li>RitmStyle для беременных <span>13500р</span> </li>
-            <li>RitmStyle +  фотосессия <span>11500р</span> </li>
+            <li>RitmStyle с погружением <span>1000р.</span></li>
+            <li>Абонемент на RitmStyle <span>5500р.</span></li>
+            <li>RitmStyle для пар <span>6000р.</span></li>
+            <li>RitmStyle для беременных <span>13500р</span></li>
+            <li>RitmStyle + фотосессия <span>11500р</span></li>
           </ul>
           <div>
-            <img src="" alt="">
-            <p>Подарочный сертификат </p>
+            <img src="" alt="" />
+            <p>Подарочный сертификат</p>
           </div>
         </div>
       </section>
