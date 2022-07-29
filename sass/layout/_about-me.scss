@@ -1,0 +1,33 @@
+.about-me {
+  margin-bottom: 150px;
+  .title {
+    margin-bottom: 0;
+  }
+  &__container {
+    width: 1076px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
+  &__section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__text {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.41;
+    margin-bottom: 30px;
+  }
+  &__description {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.37;
+    width: 466px;
+  }
+  &__img {
+    border-radius: 10px;
+    width: 526px;
+  }
+}
