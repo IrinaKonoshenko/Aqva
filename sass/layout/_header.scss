@@ -12,5 +12,11 @@
   &__link {
     font-size: 14px;
     line-height: 1.35;
+    transition: color ease-in-out .3s;
+    &--active,
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
   }
 }

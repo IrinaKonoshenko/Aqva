@@ -76,6 +76,10 @@ body {
 .header__link {
   font-size: 14px;
   line-height: 1.35;
+  transition: color ease-in-out 0.3s;
+}
+.header__link--active, .header__link:hover, .header__link:focus {
+  color: var(--accent-color);
 }
 
 .hero {
@@ -130,13 +134,40 @@ body {
   margin-top: 150px;
 }
 .session__list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.session__element--first {
+  grid-row: span 2/span 2;
+}
+.session__element--another {
+  height: 258px;
 }
 .session__link {
   background-image: url(../../image/session1.jpg);
   background-position: center;
   background-size: cover;
+  display: block;
+  height: 100%;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.session__element--first .session__bottom {
+  padding: 0 50px 50px 50px;
+}
+.session__link:hover .session__bottom {
+  border-color: #018abe;
+}
+.session__bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0 40px 30px 40px;
+  border-bottom: 7px solid transparent;
+  transition: border-color ease-in-out 0.3s;
 }
 
 .logo__link__icon {

@@ -33,7 +33,7 @@
         <nav class="header__navigation">
           <ul class="header__list list">
             <li class="header__element">
-              <a class="header__link link" href="#">Главная</a>
+              <a class="header__link header__link--active link" href="#">Главная</a>
             </li>
             <li class="header__element">
               <a class="header__link link" href="">Сеансы</a>
@@ -76,29 +76,32 @@
       </section>
       <section class="session">
         <div class="session__container container">
-          <h2 class="session__title title"><span class="title__line">Сеансы RitmStyle</span></h2>
+          <h2 class="session__title title">
+            <span class="title__line">Сеансы RitmStyle</span>
+          </h2>
           <ul class="session__list list">
-            <li class="session__element">
-              <a class="session__link link" href="">Стандартный RitmStyle</a>
-            </li>
-            <li class="session__element">
-              <a class="session__link link" href="">RitmStyle для пар</a>
-            </li>
-            <li class="session__element">
-              <a class="session__link link" href="">RitmStyle для беременных</a>
-            </li>
-            <li class="session__element">
+            <li class="session__element session__element--first">
               <a class="session__link link" href=""
-                >RitmStyle с полным погружением под воду</a
+                ><span class="session__bottom">Стандартный RitmStyle</span></a
               >
             </li>
-            <li>
+            <li class="session__element session__element--another">
+              <a class="session__link link" href=""><span class="session__bottom">RitmStyle для пар</span></a>
+            </li>
+            <li class="session__element session__element--another">
               <a class="session__link link" href=""
-                >RitmStyle + красочная подводная фотосессия</a
+                ><span class="session__bottom">RitmStyle с полным погружением под воду</span></a
               >
             </li>
-            <li>
-              <a class="session__link link" href=""></a>
+            <li class="session__element session__element--another">
+              <a class="session__link link" href=""
+                ><span class="session__bottom">RitmStyle для беременных</span></a
+              >
+            </li>
+            <li class="session__element session__element--another">
+              <a class="session__link link" href=""
+                ><span class="session__bottom">RitmStyle + красочная подводная фотосессия</span></a
+              >
             </li>
           </ul>
         </div>
