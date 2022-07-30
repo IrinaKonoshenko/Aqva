@@ -1,0 +1,17 @@
+.element {
+  position: relative;
+  &:after {
+    position: absolute;
+    top: 25%;
+    transform: translateY(-50%);
+    content: "";
+    width: 18px;
+    height: 9px;
+    background-color: var(--accent-color);
+  }
+  &:after {
+    left: -36px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+  }
+}

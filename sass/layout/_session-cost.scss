@@ -1,0 +1,34 @@
+.session-cost{
+    &__container{
+        width: 1076px;
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__element{
+        font-size: 18px;
+        line-height: 1.38;
+        padding-bottom: 31px;
+    }
+    &__item{
+        font-family: var(--secondary-font);
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.38;
+        padding-bottom: 31px;
+    }
+    &__img{
+        width: 526px;
+        border-radius: 10px;
+    }
+    &__certificate{
+        text-align: center;
+        margin-top: 30px;
+        font-family: var(--secondary-font);
+        font-weight: 700;
+        font-size: 21px;
+        line-height: 1.38;
+    }
+}
