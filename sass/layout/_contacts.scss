@@ -1,0 +1,23 @@
+.contacts{
+    padding-bottom: 90px;
+    &__content{
+        display: flex;
+        gap: 48px;
+        width: 100%;
+    }
+    &__map{
+        width: 856px;
+        height: 604px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    &__cards{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        flex-grow: 1;
+    }
+    &__card{
+        height: 50%;
+    }
+}

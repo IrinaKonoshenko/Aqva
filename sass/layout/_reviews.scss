@@ -1,50 +1,72 @@
-.reviews{
-    margin-bottom: 150px;
-    &__container{
-        width: 1736px;
+.reviews {
+  margin-bottom: 150px;
+  &__container {
+    width: 1736px;
+  }
+  &__blocks {
+    background-color: #018abe;
+    border-radius: 10px;
+    transition: all ease-in-out 0.3s;
+		cursor: pointer;
+    &--front {
+      width: 636px;
     }
-    &__list{
-        display: flex;
-        justify-content: space-between;
-        gap: 50px;
-        align-items: center;
+    &--other {
+      width: 500px;
+      opacity: 0.4;
     }
-    &__element{
-        background-color: #018ABE;
-        border-radius: 10px;
-        &--front{
-            width: 636px;
-        }
-        &--other{
-            width: 500px;
-            opacity: 0.4;
-        }
-    }
-    &__text{
-        font-weight: 700;
-        
-        &--front{
-            font-size: 20px;
-            line-height: 1.41;
-            padding: 50px 60px 20px 60px;
-        }
-        &--other{
-            font-size: 16px;
-            line-height: 1.37;
-            padding: 40px 45px 15px 45px;
-        }
-    }
-    &__description{
-        font-weight: 300;
-        &--front{
-            font-size: 14px;
-            line-height: 1.42;
-            padding: 0 60px 56px 60px;
-        }
-        &--other{
-            font-size: 10px;
-            line-height: 1.4;
-            padding: 0 45px 71px 45px;
-        }
-    }
+  }
+  &__element {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+		min-height: 395px;
+  }
+  &__blocks--front &__text {
+    font-size: 20px;
+    line-height: 1.41;
+    padding: 50px 60px 20px 60px;
+  }
+  &__blocks--other &__text {
+    font-size: 16px;
+    line-height: 1.37;
+    padding: 40px 45px 15px 45px;
+  }
+  &__text {
+    font-weight: 700;
+    transition: all ease-in-out 0.3s;
+  }
+  &__blocks--front &__description {
+    font-size: 14px;
+    line-height: 1.42;
+    padding: 0 60px 56px 60px;
+  }
+  &__blocks--other &__description {
+    font-size: 10px;
+    line-height: 1.4;
+    padding: 0 45px 71px 45px;
+  }
+  &__description {
+    font-weight: 300;
+    transition: all ease-in-out 0.3s;
+  }
+  .swiper-pagination {
+    position: static;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .swiper-pagination-bullet {
+    background: #ffffff;
+    opacity: 0.4;
+    border-radius: 3px;
+    width: 16px;
+    height: 16px;
+    margin: 0 !important;
+  }
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+  }
 }
