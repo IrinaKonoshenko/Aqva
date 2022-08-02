@@ -33,9 +33,7 @@
         <nav class="header__navigation">
           <ul class="header__list list">
             <li class="header__element">
-              <a class="header__link link" href="./index.html"
-                >Главная</a
-              >
+              <a class="header__link link" href="./index.html">Главная</a>
             </li>
             <li class="header__element">
               <a class="header__link link" href="">Сеансы</a>
@@ -47,13 +45,17 @@
               <a class="header__link link" href="">Контакты</a>
             </li>
             <li class="header__element">
-              <a class="header__link link" href="./news.html">Новости</a>
+              <a
+                class="header__link header__link--active link"
+                href="./news.html"
+                >Новости</a
+              >
             </li>
             <li class="header__element">
               <a class="header__link link" href="">Обо мне</a>
             </li>
             <li class="header__element">
-              <a class="header__link header__link--active link" href="./blog.html">Блог</a>
+              <a class="header__link link" href="./blog.html">Блог</a>
             </li>
           </ul>
         </nav>
@@ -65,7 +67,23 @@
       </div>
     </header>
     <main>
-      <h2>Блог</h2>
+      <section class="news-pages">
+        <div class="news-pages__container container">
+          <h2 class="news-pages__title title">
+            <span class="title__line">Новый формат сеансов</span>
+          </h2>
+          <div class="news-pages__content">
+            <div class="news-pages__description">
+                <span class="news-pages__data">13.02.2022</span>
+                <p class="news-pages__title">Новый формат сеансов</p>
+                <p class="news-pages__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget massa vitae tempus at pretium lacus viverra. Vitae libero vivamus quis enim quam vitae dictumst nulla duis. Sed nisl nibh et morbi tristique suspendisse morbi. Consequat facilisi tortor consectetur magnis odio. Risus, aenean tortor cras consectetur lacus, ut erat ac et. Fermentum aliquam ac egestas eget risus a. Maecenas sed pellentesque bibendum vitae at praesent sed. Amet pretium arcu gravida arcu ut dui sem quis id. Tristique in leo donec proin odio eget. Neque ut in egestas lacus sit nunc, nec. Proin mattis augue sit leo sagittis nam id accumsan. Pulvinar nunc fermentum vulputate ultrices pulvinar sed ultrices quis.
+                    <br> <br> Tempor facilisis tellus ac, odio. A amet congue tristique nibh malesuada lectus. Purus quam dapibus rhoncus iaculis amet tristique. Mattis fusce lorem fames mauris orci rhoncus, amet fringilla. Quis integer vitae at vitae urna etiam sed eu sit.
+                    <br> <br> Vitae turpis ullamcorper habitant fermentum aliquet volutpat. </p>
+            </div>
+            <img class="news-pages__img" src="./image/news-pages.jpg" alt="shadow of a girl at sunset">
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="footer__container footer__container--special container">
