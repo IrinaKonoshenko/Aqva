@@ -89,7 +89,7 @@ body {
   padding-top: 20px;
 }
 .hero__container {
-  background-image: url(./image/hero.jpg);
+  background-image: url(../image/hero.jpg);
   padding-top: 136px;
   padding-bottom: 210px;
   text-align: center;
@@ -149,7 +149,7 @@ body {
   height: 258px;
 }
 .session__link {
-  background-image: url(./image/session.jpg);
+  background-image: url(../image/session.jpg);
   background-position: center;
   background-size: cover;
   display: block;
